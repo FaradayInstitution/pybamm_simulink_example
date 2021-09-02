@@ -4,7 +4,7 @@ clc; tic;
 
 % Regenerate the casadi objects
 py.pybamm_setup.main()
-addpath('C:\Users\tom\casadi-windows-matlabR2016a-v3.5.5')
+addpath('C:\casadi-windows-matlabR2016a-v3.5.5')
 delete(gcp('nocreate'))
 disp([datestr(now, 'HH:MM:SS'),'  Model set up']);
 
