@@ -1,7 +1,11 @@
 clear all; close all; 
 %warning off; 
 clc; tic;
-
+try
+    pe = pyenv(Version='C:\Users\Tom\Anaconda3\envs\simulink\python');
+catch
+    disp('pyenv already loaded')
+end
 % Regenerate the casadi objects
 py.pybamm_setup.main()
 addpath('C:\casadi-windows-matlabR2016a-v3.5.5')
